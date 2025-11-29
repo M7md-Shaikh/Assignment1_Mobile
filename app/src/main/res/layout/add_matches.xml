@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Trip"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/etMatchName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Trip name (ex: Palestine vs Jordan)"
+            android:layout_marginBottom="12dp" />
+
+        <!-- الملعب -->
+        <EditText
+            android:id="@+id/etStadium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stadium Name"
+            android:layout_marginBottom="12dp" />
+
+
+        <EditText
+            android:id="@+id/etCityCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City - Country (example: Amman - Jordan)"
+            android:layout_marginBottom="12dp" />
+
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click to select match date"
+            android:padding="14dp"
+            android:background="#EEEEEE"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <EditText
+            android:id="@+id/etMatchTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Match time (example: 20:30)"
+            android:layout_marginBottom="12dp" />
+
+
+        <EditText
+            android:id="@+id/etDestinationInfo"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Destination information (visa, currency, tips...)"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:background="#EEEEEE"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Trip"
+            android:backgroundTint="#008000"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

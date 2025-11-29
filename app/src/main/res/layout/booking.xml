@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book the Trip"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#D32F2F"
+            android:layout_marginBottom="24dp"/>
+
+
+        <TextView
+            android:id="@+id/tvDepartureDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take-off Date: 14 March 2026"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etIDNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID Number"
+            android:inputType="number"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Would you like to travel early for tourism?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes, I want to travel early"
+                android:textSize="16sp"
+                android:layout_marginEnd="16dp"/>
+
+            <Switch
+                android:id="@+id/switchEarlyTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:showText="false"/>
+
+            <TextView
+                android:id="@+id/tvEarlyDateLabel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Select your actual travel date:"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvEarlyDeparture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click to choose early travel date"
+            android:padding="16dp"
+            android:background="#EEEEEE"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seat Type"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgSeatType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton android:id="@+id/rbRegular" android:text="Regular" android:layout_marginEnd="50dp"/>
+            <RadioButton android:id="@+id/rbVIP" android:text="VIP"/>
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cbHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hotel Booking"
+            android:textSize="16sp"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btnConfirmBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Booking"
+            android:backgroundTint="#008000"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</ScrollView>
